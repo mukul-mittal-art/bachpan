@@ -1,0 +1,46 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+.body {
+    background-color: rgb(250, 131, 20);
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0%;
+}
+.body::before {
+    content: "";
+    position: fixed;
+    opacity: 0.3;
+    background-image: url(visuals/647cfdf4ee488f79db182244c5745d79.jpg);
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    width: 100%;
+    height: 100%;
+    min-height: 100vw;
+    z-index: -1;
+}
+.bachpan {
+    font-family:Freckle Face ;
+    color: antiquewhite;
+    font-size: 15vw;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    text-shadow: 1px 0px 10px;
+}
+.bachpan:hover {
+    font-size: 0%;
+    transform: scale(1.1);
+}
+.bachpan:hover::after{
+    content: attr(data-hover);
+    font-size: 12vw;
+    font-family: Playpen Sans Deva ;
+    color:rgb(111, 11, 164);
+  
+}

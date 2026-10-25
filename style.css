@@ -27,11 +27,13 @@
 .bachpan {
     font-family:Freckle Face ;
     color: antiquewhite;
-    font-size: 15vw;
+    font-size: 20vw;
     display: flex;
     justify-content: center;
     transition: transform 0.3s ease;
-    text-shadow: 1px 0px 10px;
+    text-shadow: 1px 0px 10px; 
+    line-height: 1;
+    padding-top: 2vw;
 }
 .bachpan:hover {
     font-size: 0%;
@@ -39,8 +41,33 @@
 }
 .bachpan:hover::after{
     content: attr(data-hover);
-    font-size: 12vw;
+    padding-top: 2vw;
+    font-size: 20vw;
     font-family: Playpen Sans Deva ;
-    color:rgb(111, 11, 164);
-  
+    color:rgb(164, 11, 90);
+    line-height: 1;
+}
+
+.cara {
+    display: flex;
+    gap: 1em;
+    overflow-x: hidden;
+    padding-top: 5vw;
+}
+.carousel {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    animation: spin 3s infinite linear;
+}
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+.caraimg {
+    width: 15vw;
+}
+@keyframes spin {
+    from{transform: translateX(0%);}
+    to{transform: translateX(-50%);}
 }

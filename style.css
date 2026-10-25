@@ -28,13 +28,14 @@
 .bachpan {
     font-family:Freckle Face ;
     color: rgb(255, 255, 255);
-    font-size: 10vw;
+    font-size: 12vw;
     display: flex;
     justify-content: center;
     transition: transform 0.3s ease;
     text-shadow: 1px 0px 10px; 
     line-height: 1;
     padding-top: 2vw;
+    margin-bottom: 5vw;
 }
 .bachpan:hover {
     font-size: 0%;
@@ -45,7 +46,7 @@
     padding-top: 2vw;
     font-size: 10vw;
     font-family: Playpen Sans Deva ;
-    color:rgb(255, 255, 255);
+    color:gold;
     line-height: 1;
 }
 
@@ -53,7 +54,7 @@
     display: flex;
     gap: 1em;
     overflow-x: hidden;
-    padding-top: 5vw;
+    padding-top: 2vw;
 }
 .carousel {
     display: flex;
@@ -74,6 +75,7 @@
 .caraimg:hover {
     transform: scale(1.1) translateY(-8px);
     filter: blur(0px);
+    text-shadow: 1px 0px 8px;
 }
 @keyframes spin {
     from{transform: translateX(0%);}
@@ -81,3 +83,28 @@
 }
 
 /* NAVIGATION BAR */
+nav {
+    padding: 0.3vw;
+    padding-top: 5vw;
+}
+nav ul {
+    display: flex;
+    gap: 10vw;
+    justify-content: center;
+    align-content: center;
+    color: antiquewhite;
+    text-shadow: 1px 0px 8px;
+}
+nav a {
+    font-size: 2.2vw;
+    color: antiquewhite;
+    transition: transform 0.3s ease;
+    text-shadow: 1px 0px 8px;
+    text-decoration: none;
+    display: inline-block;
+}
+nav a:hover {
+    transform: scale(1.2);
+    color: gold;
+    text-decoration: underline;
+}
